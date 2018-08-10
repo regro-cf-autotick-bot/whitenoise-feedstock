@@ -1,6 +1,6 @@
 {% set name = "whitenoise" %}
-{% set version = "3.3.1" %}
-{% set sha256 = "9d81515f2b5b27051910996e1e860b1332e354d9e7bcf30c98f21dcb6713e0dd" %}
+{% set version = "4.0" %}
+{% set sha256 = "1e206c5adfb849942ddd057e599ac472ec1a85d56ae78a5ba24f243ea46a89c5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
