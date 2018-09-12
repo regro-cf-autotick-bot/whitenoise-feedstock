@@ -1,6 +1,6 @@
 {% set name = "whitenoise" %}
-{% set version = "4.0" %}
-{% set sha256 = "1e206c5adfb849942ddd057e599ac472ec1a85d56ae78a5ba24f243ea46a89c5" %}
+{% set version = "4.1" %}
+{% set sha256 = "32b57d193478908a48acb66bf73e7a3c18679263e3e64bfebcfac1144a430039" %}
 
 package:
   name: {{ name|lower }}
