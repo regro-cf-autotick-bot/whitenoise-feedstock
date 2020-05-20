@@ -1,6 +1,6 @@
 {% set name = "whitenoise" %}
-{% set version = "4.1.4" %}
-{% set sha256 = "22f79cf8f1f509639330f93886acaece8ec5ac5e9600c3b981d33c34e8a42dfd" %}
+{% set version = "5.1.0" %}
+{% set sha256 = "60154b976a13901414a25b0273a841145f77eb34a141f9ae032a0ace3e4d5b27" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Radically simplified static file serving for Python web apps'
+  summary: Radically simplified static file serving for Python web apps
   description: |
     With a couple of lines of config WhiteNoise allows your web app to serve its own static files, 
     making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon 
